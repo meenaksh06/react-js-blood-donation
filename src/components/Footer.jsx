@@ -45,11 +45,11 @@ const Footer = () => {
             <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
               {/* Content */}
               <h6 className="text-uppercase fw-bold mb-4">
-                <i className="fas fa-gem me-3"></i>JERRYCODE
+                <i className="fas fa-gem me-3"></i>Support Blomo
               </h6>
               <p>
-                We are totally committed to bring your image of the application or 
-                software in your mind to life, with direct collaboration and front feedback from you. We make it happen for you.
+              Support Blomo by becoming a blood donor and saving lives in your community. 
+              Spread the word about our mission and help us connect those in urgent need with life-saving blood donations.<br/> Together, we can make a difference!
               </p>
             </div>
             {/* Grid column */}
@@ -58,19 +58,19 @@ const Footer = () => {
             <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               {/* Links */}
               <h6 className="text-uppercase fw-bold mb-4">
-                Products
+                About Blomo
               </h6>
               <p>
-                <a href="#!" className="text-reset">Spring Boot</a>
+                <a href="#!" className="text-reset">Learn More</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">React</a>
+                <a href="#!" className="text-reset">Blood Camps</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Photoshop</a>
+                <a href="#!" className="text-reset">Emergency</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Laravel</a>
+                <a href="#!" className="text-reset">Donate</a>
               </p>
             </div>
             {/* Grid column */}
@@ -79,16 +79,16 @@ const Footer = () => {
             <div className="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
               {/* Links */}
               <h6 className="text-uppercase fw-bold mb-4">
-                Useful links
+                Join Our Community
               </h6>
               <p>
-                <a href="#!" className="text-reset">Pricing</a>
+                <a href="#!" className="text-reset">Connect With Donors</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Settings</a>
+                <a href="#!" className="text-reset">Healthy Life</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Orders</a>
+                <a href="#!" className="text-reset">Save Lives</a>
               </p>
               <p>
                 <a href="#!" className="text-reset">Help</a>
@@ -98,15 +98,21 @@ const Footer = () => {
 
             {/* Grid column */}
             <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              {/* Links */}
-              <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
-              <p><i className="fas fa-home me-3"></i> Dar es Salaam, Posta - IFM</p>
+              <h6 className="text-uppercase fw-bold mb-4">
+                Support
+              </h6>
               <p>
-                <i className="fas fa-envelope me-3"></i>
-                info@example.com
+                <a href="#!" className="text-reset">Stay Connected</a>
               </p>
-              <p><i className="fas fa-phone me-3"></i> + 01 234 567 88</p>
-              <p><i className="fas fa-print me-3"></i> + 01 234 567 89</p>
+              <p>
+                <a href="#!" className="text-reset">FAQs</a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">Download App</a>
+              </p>
+              <p>
+                <a href="#!" className="text-reset">Terms & Conditions</a>
+              </p>
             </div>
             {/* Grid column */}
           </div>
@@ -118,7 +124,7 @@ const Footer = () => {
       {/* Copyright */}
       <div className="text-center p-4" style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2024 Copyright:
-        <a className="fw-bold" href="#">JERRYCODE</a>
+        <a className="fw-bold" href="#">Blomo</a>
       </div>
       {/* Copyright */}
     </footer>

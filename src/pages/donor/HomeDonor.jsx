@@ -44,7 +44,7 @@ const HomeDonor = ({ allDonors, successMessage }) => {
             <article key={index} className="col-md-4 col-lg-4">
               <div className="card bg-light rounded-4 shadow">
                 <div className="card-body">
-                  <h5 className="card-title text-center text-uppercase mb-4 text-primary">HOSPITAL OFFICER REQUEST</h5>
+                  <h5 className="card-title text-center text-uppercase mb-4 text-primary">HOSPITAL REQUEST</h5>
                   <ul className="list-unstyled">
                     <li><strong>HospitalOfficer Name:</strong> {donor.full_name}</li>
                     <li><strong>Gender:</strong> {donor.gender}</li>

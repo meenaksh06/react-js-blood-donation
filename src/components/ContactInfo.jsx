@@ -55,13 +55,13 @@ const ContactInfo = () => {
             <div className="card-footer text-center">
               <ul className="list-inline mb-0">
                 <li className="list-inline-item me-4"><i className="fas fa-map-marker-alt fa-2x"></i>
-                  <p>San Francisco, CA 94126, USA</p>
+                  <p>New Delhi, India</p>
                 </li>
                 <li className="list-inline-item me-4"><i className="fas fa-phone mt-4 fa-2x"></i>
-                  <p>+01 234 567 89</p>
+                  <p>+91 9509390578</p>
                 </li>
                 <li className="list-inline-item"><i className="fas fa-envelope mt-4 fa-2x"></i>
-                  <p>contact@yourwebsite.com</p>
+                  <p>blomo@savelife.com</p>
                 </li>
               </ul>
             </div>
