@@ -16,15 +16,23 @@ const Home = () => {
                 <div className="card text-black background-image" style={{ borderRadius: '25px' }}>
                   <div className="card-body p-md-5">
                     <div className="row justify-content-center">
-                      <p className="text-center h1 fw-bold mb-3 mx-1 mx-md-4 mt-3 text-uppercase">Welcome to the Blomo.</p>
+                      <p className="text-center h1 fw-bold mb-3 mx-1 mx-md-4 mt-3 text-uppercase">
+                        Welcome to Blomo
+                      </p>
+
                       <div className="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
                         <div className="text-black">
                           <h5 className="mb-3">
-                            Join us to help others save lives and bring joy to families through your contribution of blood.
+                            Join us to help save lives and bring joy to families through your blood contribution.
                           </h5>
-                          {/* Add Link components for navigation */}
-                        <Link to="/login-donor" className="btn btn-outline-dark btn-lg m-1" role="button" rel="nofollow">Login Donor</Link>
-                        <Link to="/login-staff" className="btn btn-outline-dark btn-lg m-1" role="button">Login Hospital</Link>
+
+                          {/* Navigation Links */}
+                          <Link to="/login-donor" className="btn btn-outline-dark btn-lg m-1" role="button" rel="nofollow">
+                            Login Donor
+                          </Link>
+                          <Link to="/login-staff" className="btn btn-outline-dark btn-lg m-1" role="button">
+                            Login Hospital
+                          </Link>
                         </div>
                       </div>
                     </div>
