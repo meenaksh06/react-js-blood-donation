@@ -148,7 +148,7 @@ const RegisterDonor = () => {
   };
 
   return (
-    <div>
+    <div style={{background: '#eaeaea'}}>
       <div className="text-center p-3 container-md">
         <Link to="/">
           <img src={logo1} className="h-25 w-75 rounded" alt="..." />

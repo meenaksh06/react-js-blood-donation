@@ -16,7 +16,7 @@ const Appointments = ({ allDonors }) => {
   const paginate = pageNumber => setCurrentPage(pageNumber);
 
   return (
-    <div>
+    <div style={{background: '#eaeaea'}}>
       <Navbar username="John Doe" appointmentsColor={'primary'} />
       <div id="carouselExample" className="carousel">
         <div className="carousel-inner">

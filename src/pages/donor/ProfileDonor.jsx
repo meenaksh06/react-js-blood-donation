@@ -5,7 +5,7 @@ import { splash1 } from '../../assets/img';
 
 const ProfileDonor = ({ donor }) => {
     return (
-        <div>
+        <div style={{background: '#eaeaea'}}>
             {/* Navbar */}
             <Navbar username="John Doe" profileColor={'primary'}/>
 

@@ -13,13 +13,11 @@ const Navbar = ({ username,homeColor,appointmentsColor,aboutUsColor,contactUsCol
   };
   return (
     <div>
-      <div className="text-center p-3 container-md">
-        <Link to={"/home-donor"}>
-          <img src={logo1} className="h-25 w-75 rounded" alt="Company Logo" />
-        </Link>
-      </div>
       <nav className="navbar navbar-expand-lg bg-primary">
       <div className="container-fluid">
+      <Link to={"/home-donor"}>
+          <img src={logo1} className="h-5 w-5 rounded" alt="Logo" style={{ height: '30px', width: '120px'}} />
+        </Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -63,3 +61,7 @@ const Navbar = ({ username,homeColor,appointmentsColor,aboutUsColor,contactUsCol
 };
 
 export default Navbar;
+
+
+
+

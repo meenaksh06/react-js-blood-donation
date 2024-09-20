@@ -44,7 +44,7 @@ function LoginStaff() {
                             </label>
                           </div>
                           <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                            <button name="login" className="btn btn-primary btn-lg">Login</button>
+                            <button name="login" className="btn btn-primary btn-lg" onClick={() => alert("Sorry for the inconvenience! We're working on it.")}>Login</button>
                           </div>
                           <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                             <p className="small mb-0">Don't have an account? <Link to="/register-staff">Create an account</Link></p>

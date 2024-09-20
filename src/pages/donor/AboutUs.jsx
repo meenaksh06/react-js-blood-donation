@@ -3,7 +3,7 @@ import {Navbar,Footer,AboutTeam} from '../../components'
 
 const AboutUs = () => {
     return (
-        <div>
+        <div style={{background: '#eaeaea'}}>
             <Navbar username="John Doe" aboutUsColor={'primary'}/> {/* Pass the username as a prop */}
             <div id="carouselExample" className="carousel">
                 <div className="carousel-inner">

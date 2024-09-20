@@ -146,7 +146,7 @@ const RegisterStaff = () => {
                           </label>
                         </div>
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
-                          <button name="register" className="btn btn-primary btn-lg">Register</button>
+                          <button name="register" className="btn btn-primary btn-lg" onClick={() => alert("Sorry for the inconvenience! We're working on it.")}>Register</button>
                         </div>
                         <div className="d-flex justify-content-center mx-4 mb-3 mb-lg-4">
                           <p className="small mb-0">Already have an account? <Link to="/login-staff">login at your account</Link></p>
