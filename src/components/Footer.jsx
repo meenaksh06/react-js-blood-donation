@@ -13,22 +13,10 @@ const Footer = () => {
 
         {/* Right */}
         <div>
-          <a href="" className="me-4">
-            <i className="fab fa-facebook-f"></i>
-          </a>
-          <a href="" className="me-4">
-            <i className="fab fa-twitter"></i>
-          </a>
-          <a href="" className="me-4">
-            <i className="fab fa-google"></i>
-          </a>
-          <a href="" className="me-4">
-            <i className="fab fa-instagram"></i>
-          </a>
-          <a href="" className="me-4">
+          <a href="https://www.linkedin.com/in/meenaksh-singhania-143840283/" className="me-4">
             <i className="fab fa-linkedin"></i>
           </a>
-          <a href="" className="me-4">
+          <a href="https://github.com/meenaksh06" className="me-4">
             <i className="fab fa-github"></i>
           </a>
         </div>
@@ -61,16 +49,10 @@ const Footer = () => {
                 About Blomo
               </h6>
               <p>
-                <a href="#!" className="text-reset">Learn More</a>
+                <a href="http://localhost:5173/about-us" className="text-reset">Learn More</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Blood Camps</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Emergency</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Donate</a>
+                <a href="https://eraktkosh.mohfw.gov.in/BLDAHIMS/bloodbank/campSchedule.cnt" className="text-reset">Blood Camps</a>
               </p>
             </div>
             {/* Grid column */}
@@ -82,16 +64,10 @@ const Footer = () => {
                 Join Our Community
               </h6>
               <p>
-                <a href="#!" className="text-reset">Connect With Donors</a>
+                <a href="http://localhost:5173/home-donor" className="text-reset">Connect With Donors</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">Healthy Life</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Save Lives</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Help</a>
+                <a href="http://localhost:5173/home-donor" className="text-reset">Healthy Life</a>
               </p>
             </div>
             {/* Grid column */}
@@ -105,13 +81,7 @@ const Footer = () => {
                 <a href="#!" className="text-reset">Stay Connected</a>
               </p>
               <p>
-                <a href="#!" className="text-reset">FAQs</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Download App</a>
-              </p>
-              <p>
-                <a href="#!" className="text-reset">Terms & Conditions</a>
+                <a href="http://localhost:5173/contact-us" className="text-reset">FAQs</a>
               </p>
             </div>
             {/* Grid column */}

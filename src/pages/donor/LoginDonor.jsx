@@ -120,8 +120,9 @@ const LoginDonor = () => {
                         <p className="text-center h1 fw-bold mb-5 mx-1 mx-md-4 mt-4">
                           Welcome Back Our beloved Blood Donor!
                         </p>
+                        <p>Email: john@gmail.com</p>
+                        <p>Password: 1234</p>
 
-                        {/* Show error message if credentials are incorrect */}
                         {error && (
                           <p className="text-center text-danger mb-5 mx-1 mx-md-4 mt-4">
                             {error}

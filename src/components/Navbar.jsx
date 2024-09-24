@@ -43,15 +43,15 @@ const Navbar = ({ username,homeColor,appointmentsColor,aboutUsColor,contactUsCol
               </Link>
             </li>
           </ul>
+
           <ul className="navbar-nav ml-auto">
-              {/* Integrate the Dropdown component */}
-              <Dropdown username={username} defaultTextColor={defaultTextColor} profileColor={profileColor} profileRoute={'/profile-donor'}/>
-              <li className="nav-item">
+              <Dropdown username={username} defaultTextColor={defaultTextColor} profileColor={profileColor} profileRoute={'/profile-donor'} />
+              {/* <li className="nav-item">
                 <form className="d-flex ps-3 pe-1" role="search" onSubmit={handleSubmit}>
                   <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                   <button className="btn btn-outline-success text-white" type="submit">Search</button>
                 </form>
-              </li>
+              </li> */}
           </ul>
         </div>
       </div>

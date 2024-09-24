@@ -1,162 +1,3 @@
-// import React, { useState } from 'react';
-// import { Navbar, Footer } from '../../components';
-
-// const HomeDonor = ({ allDonors, successMessage }) => {
-//   const [currentPage, setCurrentPage] = useState(1);
-//   const donorsPerPage = 8;
-
-//   // Calculate the index of the last donor on the current page
-//   const indexOfLastDonor = currentPage * donorsPerPage;
-//   // Calculate the index of the first donor on the current page
-//   const indexOfFirstDonor = indexOfLastDonor - donorsPerPage;
-//   // Get the donors for the current page
-//   const currentDonors = allDonors.slice(indexOfFirstDonor, indexOfLastDonor);
-
-//   // Change page
-//   const paginate = pageNumber => setCurrentPage(pageNumber);
-
-//   const handleSubmit = (event) => {
-//     event.preventDefault(); // Prevent the default form submission behavior
-//     // Optionally, you can add any other logic here, such as showing a message to the user
-//   };
-
-//   return (
-//     <div style={{background: '#eaeaea'}}>
-//       {/* Navbar */}
-//       <Navbar username={'John Doe'} homeColor={'primary'} />
-
-//       {/* Success Message */}
-//       {successMessage && (
-//         <p className="text-center alert alert-success" id="myAlert"><strong>{successMessage}</strong></p>
-//       )}
-
-//       {/* Main Content */}
-//       <div id="carouselExample" className="carousel">
-//         <div className="carousel-inner">
-//           {/* Carousel items here */}
-//         </div>
-//       </div>
-
-//       {/* Donor Cards */}
-//       <div className="container">
-//         <div className="row">
-//           {currentDonors.map((donor, index) => (
-//             <article key={index} className="col-md-4 col-lg-4">
-//               <h2>Blood Request</h2>
-//               <div className="card bg-light rounded-4 shadow">
-//                 <div className="card-body">
-//                   <h5 className="card-title text-center text-uppercase mb-4 text-primary">HOSPITAL REQUEST</h5>
-//                   <ul className="list-unstyled">
-//                     <li><strong>HospitalOfficer Name:</strong> {donor.full_name}</li>
-//                     <li><strong>Gender:</strong> {donor.gender}</li>
-//                     <li><strong>HospitalOfficer Phone:</strong> {donor.phone_number}</li>
-//                     <li><strong>Hospital Location:</strong> {donor.hospital_name}</li>
-//                     <li><strong>Hospital Address:</strong> {donor.hospital_address}</li>
-//                     <li><strong>Hospital Contact:</strong> {donor.hospital_contact}</li>
-//                     <li><strong>Hospital Email:</strong> {donor.hospital_email}</li>
-//                     <li><strong>Appointment Time:</strong> {donor.request_date}</li>
-//                   </ul>
-//                   <div className="d-flex justify-content-between mt-3">
-//                     {/* Buttons for cancel and accept */}
-//                     <form onSubmit={handleSubmit}>
-//                       <button className="btn btn-danger">Cancel</button>
-//                     </form>
-//                     <form onSubmit={handleSubmit}>
-//                       <button className="btn btn-success">Accept</button>
-//                     </form>
-//                   </div>
-//                 </div>
-//               </div>
-//               {/* <h1>Healty Blogs & Tips</h1> */}
-//               <h2>Healthy Tips and Blogs</h2>
-//               <div className="card bg-light rounded-4 shadow">
-//                 <div className="card-body">
-//                   <h5 className="card-title text-center text-uppercase mb-4 text-primary">Five Simple Habits</h5>
-//                   <ul className="list-unstyled">
-//                     <p>1)Stay Hydrated: Drink 8 glasses of water daily for energy and digestion.</p>
-//                     <p>2)Balanced Diet: Include fruits, veggies, and lean proteins for essential nutrients.</p>
-//                     <p>3)Exercise: Get 30 minutes of activity daily—walk, cycle, or do yoga.</p>
-//                     <p>4)Sleep: Aim for 7-8 hours nightly for mental and physical health.</p>
-//                     <p>5)Mental Wellness: Practice mindfulness to reduce stress and boost well-being.</p>
-//                   </ul>
-//                 </div>
-//               </div>
-
-//               <h2>Nearby Blood Donors</h2>
-//               <div className="card bg-light rounded-4 shadow">
-//                 <div className="card-body">
-//                   <h5 className="card-title text-center text-uppercase mb-4 text-primary">Donor Details</h5>
-//                   <ul className="list-unstyled">
-//                     <li><span style={{ fontWeight: 'bold', display: 'inline' }}>Donor Name:</span><span style={{ display: 'inline' }}> Rahul Singh</span></li>
-//                     <li><span style={{ fontWeight: 'bold', display: 'inline' }}>Donor Blood group:</span><span style={{ display: 'inline' }}> AB+</span></li>
-//                     <li><span style={{ fontWeight: 'bold', display: 'inline' }}>Donor Location:</span><span style={{ display: 'inline' }}> Mayur Vihar, Delhi</span></li>
-//                     <li><span style={{ fontWeight: 'bold', display: 'inline' }}>Donor Mobile No:</span><span style={{ display: 'inline' }}> 9236723612</span></li>
-//                   </ul>
-//                   <div className="d-flex justify-content-center mt-3">
-//                     {/* Buttons for cancel and accept */}
-//                     <form onSubmit={handleSubmit}>
-//                       <button className="btn btn-success">Send Request</button>
-//                     </form>
-//                   </div>
-//                 </div>
-//               </div>
-
-
-//             </article>
-//           ))}
-//         </div>
-//       </div>
-
-//       {/* Healthy Blogs Section */}
-//       {/* <div className="container mt-5">
-//         <h3 className="text-center text-uppercase text-primary mb-4">Healthy Life Blogs</h3>
-//         <div className="row">
-//           {blogs.map((blog, index) => (
-//             <article key={index} className="col-md-6 col-lg-4">
-//               <div className="card bg-light rounded-4 shadow">
-//                 <div className="card-body">
-//                   <h5 className="card-title text-center text-uppercase mb-4">{blog.title}</h5>
-//                   <p className="card-text">{blog.excerpt}</p>
-//                   <a href={blog.link} className="btn btn-primary">Read More</a>
-//                 </div>
-//               </div>
-//             </article>
-//           ))}
-//         </div>
-//       </div> */}
-
-//       {/* Pagination links */}
-//       <div className="container">
-//         <div className="row">
-//           <div className="col-md-12">
-//             <nav aria-label="Page navigation example">
-//               <ul className="pagination justify-content-center">
-//                 <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
-//                   <a className="page-link" href="#" onClick={() => paginate(currentPage - 1)}>Previous</a>
-//                 </li>
-//                 {Array.from({ length: Math.ceil(allDonors.length / donorsPerPage) }).map((_, i) => (
-//                   <li key={i} className={`page-item ${currentPage === i + 1 ? 'active' : ''}`}>
-//                     <a className="page-link" href="#" onClick={() => paginate(i + 1)}>{i + 1}</a>
-//                   </li>
-//                 ))}
-//                 <li className={`page-item ${currentPage === Math.ceil(allDonors.length / donorsPerPage) ? 'disabled' : ''}`}>
-//                   <a className="page-link" href="#" onClick={() => paginate(currentPage + 1)}>Next</a>
-//                 </li>
-//               </ul>
-//             </nav>
-//           </div>
-//         </div>
-//       </div>
-
-//       {/* Footer */}
-//       <Footer />
-//     </div>
-//   );
-// };
-
-// export default HomeDonor;
-
-
 import React, { useState } from 'react';
 import { Navbar, Footer } from '../../components';
 
@@ -178,6 +19,18 @@ const HomeDonor = ({ allDonors, successMessage }) => {
     event.preventDefault(); // Prevent the default form submission behavior
     // Optionally, you can add any other logic here, such as showing a message to the user
   };
+
+  const handleAccept = () => {
+    alert("Appointment booked successfully!");
+  };
+
+  const handleSendRequest = () => {
+    alert("We will get back to you soon!");
+  };
+
+  const handleCancel = () => {
+    alert("We're sorry to see you go! Your request has been successfully cancelled.")
+  }
 
   return (
     <div style={{ background: '#eaeaea' }}>
@@ -203,35 +56,46 @@ const HomeDonor = ({ allDonors, successMessage }) => {
             Blood Requests
           </h2>
           {currentDonors.map((donor, index) => (
-            <article key={index} className="col-md-4 col-lg-4">
-              <div className="card bg-light rounded-4 shadow">
-                <div className="card-body">
-                  <h5 className="card-title text-center text-uppercase mb-4 text-primary">HOSPITAL REQUEST</h5>
+            <article key={index} className="col-md-4 col-lg-4" >
+              <div className="card bg-light rounded-4 shadow" style={{ display: 'flex', height: '90%' }}>
+                <div style={{ overflow: 'hidden', borderRadius: ' 15px ', height: '90%' }}>
+                  <img
+                    src={donor.image}
+                    alt="Hospital"
+                    style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                  />
+                </div>
+                <div style={{ padding: '15px' }}>
                   <ul className="list-unstyled">
-                    <li><strong>HospitalOfficer Name:</strong> {donor.full_name}</li>
-                    <li><strong>Gender:</strong> {donor.gender}</li>
-                    <li><strong>HospitalOfficer Phone:</strong> {donor.phone_number}</li>
-                    <li><strong>Hospital Location:</strong> {donor.hospital_name}</li>
-                    <li><strong>Hospital Address:</strong> {donor.hospital_address}</li>
+                    <li><strong>Blood Group:</strong> {donor.Blood_Group}</li>
+                    <li><strong>Hospital Name:</strong> {donor.hospital_name}</li>
+                    <li><strong>Hospital Location:</strong> {donor.hospital_location}</li>
                     <li><strong>Hospital Contact:</strong> {donor.hospital_contact}</li>
-                    <li><strong>Hospital Email:</strong> {donor.hospital_email}</li>
-                    <li><strong>Appointment Time:</strong> {donor.request_date}</li>
+                    <li><strong>When Needed:</strong> {donor.when_needed}</li>
                   </ul>
                   <div className="d-flex justify-content-between mt-3">
-                    {/* Buttons for cancel and accept */}
                     <form onSubmit={handleSubmit}>
-                      <button className="btn btn-danger">Cancel</button>
+                      <button className="btn btn-danger" onClick={handleCancel}>Cancel</button>
                     </form>
                     <form onSubmit={handleSubmit}>
-                      <button className="btn btn-success">Accept</button>
+                      <button
+                        className="btn btn-success"
+                        onClick={handleAccept} // Add onClick handler here
+                      >
+                        Accept
+                      </button>
                     </form>
                   </div>
                 </div>
               </div>
+
+
             </article>
           ))}
         </div>
       </div>
+
+
 
       <div className="container mt-5">
         <h2 style={{ fontSize: '2.5rem', fontWeight: '700', textTransform: 'uppercase', letterSpacing: '2px', textShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', marginBottom: '20px', padding: '10px', borderBottom: '4px solid #e53e3e' }}>
@@ -320,7 +184,7 @@ const HomeDonor = ({ allDonors, successMessage }) => {
                 </ul>
                 <div className="d-flex justify-content-center mt-3">
                   <form onSubmit={handleSubmit}>
-                    <button className="btn btn-success">Send Request</button>
+                    <button className="btn btn-success" onClick={handleSendRequest}>Send Request</button>
                   </form>
                 </div>
               </div>
@@ -349,7 +213,7 @@ const HomeDonor = ({ allDonors, successMessage }) => {
                 </ul>
                 <div className="d-flex justify-content-center mt-3">
                   <form onSubmit={handleSubmit}>
-                    <button className="btn btn-success">Send Request</button>
+                    <button className="btn btn-success" onClick={handleSendRequest}>Send Request</button>
                   </form>
                 </div>
               </div>
@@ -378,7 +242,7 @@ const HomeDonor = ({ allDonors, successMessage }) => {
                 </ul>
                 <div className="d-flex justify-content-center mt-3">
                   <form onSubmit={handleSubmit}>
-                    <button className="btn btn-success">Send Request</button>
+                    <button className="btn btn-success" onClick={handleSendRequest}>Send Request</button>
                   </form>
                 </div>
               </div>
@@ -387,32 +251,6 @@ const HomeDonor = ({ allDonors, successMessage }) => {
         </div>
       </div>
 
-
-
-      {/* Pagination links */}
-      <div className="container">
-        <div className="row">
-          <div className="col-md-12">
-            <nav aria-label="Page navigation example">
-              <ul className="pagination justify-content-center">
-                <li className={`page-item ${currentPage === 1 ? 'disabled' : ''}`}>
-                  <a className="page-link" href="#" onClick={() => paginate(currentPage - 1)}>Previous</a>
-                </li>
-                {Array.from({ length: Math.ceil(allDonors.length / donorsPerPage) }).map((_, i) => (
-                  <li key={i} className={`page-item ${currentPage === i + 1 ? 'active' : ''}`}>
-                    <a className="page-link" href="#" onClick={() => paginate(i + 1)}>{i + 1}</a>
-                  </li>
-                ))}
-                <li className={`page-item ${currentPage === Math.ceil(allDonors.length / donorsPerPage) ? 'disabled' : ''}`}>
-                  <a className="page-link" href="#" onClick={() => paginate(currentPage + 1)}>Next</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
-
-      {/* Footer */}
       <Footer />
     </div>
   );

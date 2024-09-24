@@ -1,10 +1,41 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const ContactInfo = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    subject: '',
+    message: ''
+  });
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
   const handleSubmit = (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
-    // Optionally, you can add any other logic here, such as showing a message to the user
-};
+    event.preventDefault(); // Prevent default form submission
+
+    // Check if all fields are filled
+    const { name, email, subject, message } = formData;
+
+    if (name && email && subject && message) {
+      alert("Message successfully sent!");
+
+      // Reset form fields to empty
+      setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+      });
+    } else {
+      alert("Please fill in all the required fields.");
+    }
+  };
+
   return (
     <div className="container mt-3">
       <div className="row justify-content-center">
@@ -20,13 +51,29 @@ const ContactInfo = () => {
                   <div className="col-md-6">
                     <div className="md-form">
                       <label htmlFor="name">Your Name</label>
-                      <input type="text" id="name" name="name" className="form-control" />
+                      <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        className="form-control" 
+                        required 
+                        value={formData.name} 
+                        onChange={handleChange} 
+                      />
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="md-form">
                       <label htmlFor="email">Your Email</label>
-                      <input type="email" id="email" name="email" className="form-control" />
+                      <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        className="form-control" 
+                        required 
+                        value={formData.email} 
+                        onChange={handleChange} 
+                      />
                     </div>
                   </div>
                 </div>
@@ -34,7 +81,15 @@ const ContactInfo = () => {
                   <div className="col-md-12">
                     <div className="md-form">
                       <label htmlFor="subject">Subject</label>
-                      <input type="text" id="subject" name="subject" className="form-control" />
+                      <input 
+                        type="text" 
+                        id="subject" 
+                        name="subject" 
+                        className="form-control" 
+                        required 
+                        value={formData.subject} 
+                        onChange={handleChange} 
+                      />
                     </div>
                   </div>
                 </div>
@@ -42,7 +97,15 @@ const ContactInfo = () => {
                   <div className="col-md-12">
                     <div className="md-form">
                       <label htmlFor="message">Your Message</label>
-                      <textarea id="message" name="message" rows="4" className="form-control md-textarea"></textarea>
+                      <textarea 
+                        id="message" 
+                        name="message" 
+                        rows="4" 
+                        className="form-control md-textarea" 
+                        required 
+                        value={formData.message} 
+                        onChange={handleChange} 
+                      />
                     </div>
                   </div>
                 </div>
@@ -73,3 +136,4 @@ const ContactInfo = () => {
 };
 
 export default ContactInfo;
+
